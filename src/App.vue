@@ -1,16 +1,22 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <OptionCount />
+  <CompositionCount />
+  <ComposableCount />
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
+import OptionCount from "@/components/OptionCount.vue";
+import CompositionCount from "@/components/CompositionCount.vue";
+import ComposableCount from "@/components/ComposableCount.vue";
 
 export default defineComponent({
   name: "App",
   components: {
-    HelloWorld,
+    ComposableCount,
+    CompositionCount,
+    OptionCount,
   },
 });
 </script>
